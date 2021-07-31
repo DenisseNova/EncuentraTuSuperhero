@@ -4,3 +4,6 @@ img {
 .navbar-brand {
   width: 40px;
 }
+.canvasjs-chart-credit {
+  display: none;
+}
