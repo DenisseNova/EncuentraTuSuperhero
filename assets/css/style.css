@@ -4,9 +4,17 @@ img {
 .navbar-brand {
   width: 40px;
 }
+.btn {
+  text-align: center;
+}
 .canvasjs-chart-credit {
   display: none;
 }
+
 .esconder{
   display: none;
+}
+
+.canvasjs-chart-canvas {
+  width: 100% !important;
 }

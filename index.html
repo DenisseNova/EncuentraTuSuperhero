@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -27,21 +28,24 @@
       <div class="col-sm-12 col-md-4">
         <form id="formSH">
           <div class="form-group">
-            <label for="inputIdSH">SH</label>
-            <input type="number" class="form-control" id="inputIdSH" name="inputIdSH" required max="1000" min="1" step="1" />
+            <h3>Encuentra tu SuperHero</h3>
+            <label for="inputIdSH">Ingresa en numero del SuperHero a buscar</label>
+            <input type="number" class="form-control" id="inputIdSH" name="inputIdSH" required max="731" min="1" step="1" />
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Buscar</button>
         </form>
       </div>
     </div>
-    <div class="row esconder">
-      <div class="col-sm-12 col-md-6" >
-        <h4>SuperHero Encontrado</h4>
-        <div id="info"> </div>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <div class="esconder">
+      <div class="row">
+        <div class="col-sm-12 col-md-6" >
+          <h4>SuperHero Encontrado</h4>
+          <div id="info"></div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 
+        </div>
       </div>
     </div>
   </div>
