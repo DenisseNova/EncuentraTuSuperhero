@@ -18,3 +18,9 @@ img {
 .canvasjs-chart-canvas {
   width: 100% !important;
 }
+
+.tamanioletra p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+}

@@ -15,7 +15,7 @@ $(document).ready(function(){
           alert('No existe el ID');
         } else  if (respuesta.response === 'success') {
           $("#info").html(
-            `<div class="card mb-3">
+            `<div class="card mb-3 tamanioletra">
             <div class="row no-gutters">
               <div class="col-md-4">
                 <img src="${respuesta.image.url}">
@@ -23,18 +23,18 @@ $(document).ready(function(){
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">${respuesta.name} </h5>
-                  <p class="card-text"><small>Conexiones: ${respuesta.connections['group-affiliation']}</small></p>
-                  <p class="card-text">Publicado por: ${respuesta.biography.publisher}</p>
-                  <hr>
-                  <p class="card-text">Ocupación: ${respuesta.work.occupation}</p>
-                  <hr>
-                  <p class="card-text">Primera Aparición: ${respuesta.biography["first-appearance"]}</p>
-                  <hr>
-                  <p class="card-text">Altura: ${respuesta.appearance.height[0]} - ${respuesta.appearance.height[1]}</p>
-                  <hr>
-                  <p class="card-text">Peso: ${respuesta.appearance.weight[0]} - ${respuesta.appearance.weight[1]}</p>
-                  <hr>
-                  <p class="card-text">Alianzas: ${respuesta.biography.aliases}</p>
+                  <p class="card-text"><i>Conexiones:</i> ${respuesta.connections['group-affiliation']}</p>
+                  <p class="card-text"> <i>Publicado por:</i> ${respuesta.biography.publisher}</p>
+                  <hr class="my-2">
+                  <p class="card-text"><i>Ocupación:</i>  ${respuesta.work.occupation}</p>
+                  <hr class="my-2">
+                  <p class="card-text"><i>Primera Aparición:</i>  ${respuesta.biography["first-appearance"]}</p>
+                  <hr class="my-2">
+                  <p class="card-text"><i>Altura:</i>  ${respuesta.appearance.height[0]} - ${respuesta.appearance.height[1]}</p>
+                  <hr class="my-2">
+                  <p class="card-text"><i>Peso:</i>  ${respuesta.appearance.weight[0]} - ${respuesta.appearance.weight[1]}</p>
+                  <hr class="my-2">
+                  <p class="card-text"><i>Alianzas:</i>  ${respuesta.biography.aliases}</p>
                 </div>
               </div>
             </div>
