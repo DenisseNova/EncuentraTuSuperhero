@@ -51,7 +51,7 @@ $(document).ready(function(){
             }
           })
 
-          mostrarGrafico(nuevoArray)
+          mostrarGrafico(nuevoArray, respuesta.name)
           
           $(".esconder").show();
         }
@@ -67,10 +67,10 @@ $(document).ready(function(){
   })
 })
 
-function mostrarGrafico(datos) {
+function mostrarGrafico(datos, name) {
   var options = {
     title: {
-      text: "Estadisticas del Poder para"
+      text: `Estadisticas del Poder para ${name}`
     },
     animationEnabled: true,
     data: [{
