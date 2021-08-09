@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     const id = $('#inputIdSH').val();
     if(isNaN(id)) return alert('Debe ingesar un numero')
+
+    $('#botonBuscar').html('Cargando').prop('disabled', true)
     
     const miUrl = `https://www.superheroapi.com/api.php/${miToken}/${id}`
     $.ajax({
@@ -55,8 +57,12 @@ $(document).ready(function(){
         }
       },
       error: function(){
+        alert ("Ocurrió un error al conectarse a la API")
         $(".esconder").hide();
       },
+      complete: function(){
+        $('#botonBuscar').html('Buscar').prop('disabled', false)
+      }
     });
   })
 })
